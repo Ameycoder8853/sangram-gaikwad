@@ -67,9 +67,6 @@ export const Navbar = () => {
         <Instagram className="h-4 w-4" />
       </a>
       <a href="#" className="rounded-full bg-primary/10 p-2 transition-colors hover:bg-primary hover:text-gray-300">
-        <Twitter className="h-4 w-4" />
-      </a>
-      <a href="#" className="rounded-full bg-primary/10 p-2 transition-colors hover:bg-primary hover:text-gray-300">
         <Linkedin className="h-4 w-4" />
       </a>
       <a href="https://wa.me/919881950536" className="rounded-full bg-primary/10 p-2 transition-colors hover:bg-primary hover:text-gray-300">
