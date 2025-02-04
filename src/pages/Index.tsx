@@ -14,7 +14,7 @@ const Index = () => {
       price: "2,80,00,000",
       location: "Baner",
       image: "/24kaltura.jpeg",
-      link:"/property/GADuuN6XfhAWVQdoRu8p"
+      link:"/properties"
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ const Index = () => {
       price: "3,37,00,000",
       location: "Pimple Nilakh",
       image: "/manor4.jpg",
-      link:"/property/Ljspai3ads6jSWRjJt18"
+      link:"/properties"
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const Index = () => {
       price: "1,39,00,000",
       location: "Pimple Nilakh",
       image: "/elina 3.jpg",
-      link:"/property/6zYV33QAIEPjO6sBCxnc"
+      link:"/properties"
     },
   ];
 
@@ -77,7 +77,7 @@ const Index = () => {
       title: "24k Altura",
       description: "A collection of premium flats in Baner By Kolte Patil",
       image: "/24kaltura.jpeg",
-      link: "/property/GADuuN6XfhAWVQdoRu8p",
+      link: "/properties",
       stats: {
         units: "50 Units",
         value: "₹2.80CR",
@@ -88,7 +88,7 @@ const Index = () => {
       title: "24k Manor",
       description: "A collection of premium flats in Pimple Nilakh By Kolte Patil",
       image: "/manor4.jpg",
-      link: "/property/Ljspai3ads6jSWRjJt18",
+      link: "/properties",
 
       stats: {
         units: "50 Units",
@@ -100,7 +100,7 @@ const Index = () => {
       title: "Balmoral Riverside",
       description: "A collection of premium flats in Balewadi called Balmoral Riverside",
       image: "https://firebasestorage.googleapis.com/v0/b/videomatic-ai-5c2b2.appspot.com/o/properties%2F1738669088486_balmoral9.jpg?alt=media&token=ff812ce8-4b61-486d-9f79-c829a2966954",
-      link: "/property/kUMSV0e8gTyVPWOQhrmQ",
+      link: "/properties",
 
       stats: {
         units: "50 Units",
