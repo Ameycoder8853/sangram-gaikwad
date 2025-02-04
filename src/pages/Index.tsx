@@ -14,7 +14,7 @@ const Index = () => {
       price: "2,80,00,000",
       location: "Baner",
       image: "/24kaltura.jpeg",
-      link:"/properties"
+      link:/properties
     },
     {
       id: 2,
