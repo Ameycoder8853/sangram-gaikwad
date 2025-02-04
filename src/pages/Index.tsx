@@ -74,9 +74,9 @@ const Index = () => {
 
   const portfolioWorks = [
     {
-      title: "24k Altura",
-      description: "A collection of premium flats in Baner By Kolte Patil",
-      image: "/24kaltura.jpeg",
+      title: "Balmoral Riverside",
+      description: "A collection of premium flats in Balewadi called Balmoral Riverside,
+      image: "https://firebasestorage.googleapis.com/v0/b/videomatic-ai-5c2b2.appspot.com/o/properties%2F1738669088486_balmoral9.jpg?alt=media&token=ff812ce8-4b61-486d-9f79-c829a2966954",
       link: "/property/GADuuN6XfhAWVQdoRu8p",
       stats: {
         units: "50 Units",
