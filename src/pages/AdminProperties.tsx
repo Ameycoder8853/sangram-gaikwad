@@ -173,7 +173,7 @@ const AdminProperties = () => {
     <div className="container mx-auto px-4 py-8 text-white">
       <h1 className="mb-8 text-3xl font-bold text-white">Admin Properties Management</h1>
 
-      <div className="mb-8 space-y-6 rounded-lg bg-[#010f4a] p-6 shadow-md">
+      <div className="mb-8 space-y-6 rounded-lg bg-primary p-6 shadow-md">
         <h2 className="text-2xl font-semibold  text-white">Add New Property</h2>
         <form onSubmit={handleAddProperty} className="space-y-4">
           <div className="grid gap-4 md:grid-cols-2">
@@ -205,7 +205,7 @@ const AdminProperties = () => {
                 <SelectTrigger>
                   <SelectValue placeholder="Select type" />
                 </SelectTrigger>
-                <SelectContent className="bg-[#010f4a] text-white ">
+                <SelectContent className="bg-primary text-white ">
                   <SelectItem value="residential">Residential</SelectItem>
                   <SelectItem value="commercial">Commercial</SelectItem>
                 </SelectContent>
@@ -219,7 +219,7 @@ const AdminProperties = () => {
                     <SelectTrigger>
                       <SelectValue placeholder="Select location" />
                     </SelectTrigger>
-                    <SelectContent className="bg-[#010f4a] text-white">
+                    <SelectContent className="bg-primary text-white">
                       <SelectItem value="Baner">Baner</SelectItem>
                       <SelectItem value="Balewadi">Balewadi</SelectItem>
                       <SelectItem value="Wakad">Wakad</SelectItem>
@@ -233,7 +233,7 @@ const AdminProperties = () => {
                     <SelectTrigger>
                       <SelectValue placeholder="Select bedrooms" />
                     </SelectTrigger>
-                    <SelectContent className="bg-[#010f4a] text-white">
+                    <SelectContent className="bg-primary text-white">
                       <SelectItem value="1BHK">1 BHK</SelectItem>
                       <SelectItem value="2BHK">2 BHK</SelectItem>
                       <SelectItem value="3BHK">3 BHK</SelectItem>

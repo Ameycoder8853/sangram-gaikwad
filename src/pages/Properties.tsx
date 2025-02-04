@@ -81,102 +81,105 @@ const Properties = () => {
         <meta name="keywords" content="properties for sale pune, luxury apartments pune, commercial property pune, residential property pune, 2bhk pune, 3bhk pune, property listing pune, real estate listings pune, baner properties, balewadi properties, wakad properties, premium homes pune, investment property pune, ready possession flats pune, under construction projects pune, luxury villas pune, penthouse pune, office space pune, commercial real estate pune, property rates pune" />
         <link rel="canonical" href="https://sangramgaikwad.com/properties" />
       </Helmet>
-      
-    <div className="container mx-auto px-4 py-8 bg-[#010f4a] text-white">
-      <h1 className="mb-8 text-3xl font-bold">Properties</h1>
-      
-      <div className="mb-8 grid gap-4 rounded-lg bg-[#010f4a] p-4 shadow-md md:grid-cols-4">
-        <div>
-          <label className="mb-2 block text-sm font-medium">Price Range</label>
-          <Slider
-            defaultValue={[0, 50000000]}
-            max={50000000}
-            step={500000}
-            onValueChange={setPriceRange}
-          />
-          <div className="mt-2 flex justify-between text-sm">
-            <span>{formatPrice(priceRange[0])}</span>
-            <span>{formatPrice(priceRange[1])}</span>
-          </div>
-        </div>
-        
-        <div>
-          <label className="mb-2 block text-sm font-medium">Property Type</label>
-          <Select onValueChange={setPropertyType}>
-            <SelectTrigger>
-              <SelectValue placeholder="Select type" />
-            </SelectTrigger>
-            <SelectContent className="bg-[#010f4a] text-white">
-              <SelectItem value="residential">Residential</SelectItem>
-              <SelectItem value="commercial">Commercial</SelectItem>
-            </SelectContent>    
-          </Select>
-        </div>
-        
-        {propertyType === "residential" && (
-          <>
-            <div>
-              <label className="mb-2 block text-sm font-medium">Location</label>
-              <Select onValueChange={setLocation}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select location" />
-                </SelectTrigger>
-                <SelectContent className="bg-[#010f4a] text-white ">
-                  <SelectItem value="Baner">Baner</SelectItem>
-                  <SelectItem value="Balewadi">Balewadi</SelectItem>
-                  <SelectItem value="Wakad">Wakad</SelectItem>
-                  <SelectItem value="Pimple Nilakh">Pimple Nilakh</SelectItem>
 
-                </SelectContent>
-              </Select>
-            </div>
-            
-            <div>
-              <label className="mb-2 block text-sm font-medium">Bedrooms</label>
-              <Select onValueChange={setBedrooms}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select bedrooms" />
-                </SelectTrigger>
-                <SelectContent className="bg-[#010f4a] text-white">
-                  <SelectItem value="1BHK">1 BHK</SelectItem>
-                  <SelectItem value="2BHK">2 BHK</SelectItem>
-                  <SelectItem value="3BHK">3 BHK</SelectItem>
-                  <SelectItem value="4BHK">4 BHK</SelectItem>
-                  <SelectItem value="5BHK">5 BHK</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-          </>
-        )}
-      </div>
-      
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {filteredProperties.map((property) => (
-          <Card 
-            key={property.id} 
-            className="overflow-hidden cursor-pointer transition-transform hover:scale-105"
-            onClick={() => navigate(`/property/${property.id}`)}
-          >
-            <img
-              src={property.images[0]}
-              alt={property.title}
-              className="h-48 w-full object-cover"
+      <div className="container mx-auto px-4 py-8 bg-primary text-white">
+        <h1 className="mb-8 text-3xl font-bold">Properties</h1>
+
+        <div className="mb-8 grid gap-4 rounded-lg bg-primary p-4 shadow-md md:grid-cols-4 text-white">
+          <div>
+            <label className="mb-2 block text-sm font-medium text-white">Price Range</label>
+            <Slider
+              className=" [&>span]:bg-gray-900"
+              defaultValue={[0, 50000000]}
+              max={50000000}
+              step={500000}
+              onValueChange={setPriceRange}
             />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold  text-white">{property.title}</h3>
-              <p className="text-lg font-bold text-white">
-                {formatPrice(property.price)}
-              </p>
-              <div className="mt-2 text-sm text-white">
-                <p>{property.location}</p>
-                {property.type === "residential" && <p>{property.bedrooms}</p>}
-                <p>{property.type.charAt(0).toUpperCase() + property.type.slice(1)}</p>
-              </div>
+
+            <div className="mt-2 flex justify-between text-sm">
+              <span>{formatPrice(priceRange[0])}</span>
+              <span>{formatPrice(priceRange[1])}</span>
             </div>
-          </Card>
-        ))}
+          </div>
+
+          <div>
+            <label className="mb-2 block text-sm font-medium">Property Type</label>
+            <Select onValueChange={setPropertyType}>
+  <SelectTrigger>
+    <SelectValue placeholder="Select type" />
+  </SelectTrigger>
+  <SelectContent className=" text-white">
+    <SelectItem value="residential" className="hover:bg-gray-900">Residential</SelectItem>
+    <SelectItem value="commercial" className="hover:bg-gray-900">Commercial</SelectItem>
+  </SelectContent>
+</Select>
+
+          </div>
+
+          {propertyType === "residential" && (
+            <>
+              <div>
+                <label className="mb-2 block text-sm font-medium">Location</label>
+                <Select onValueChange={setLocation}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select location" />
+                  </SelectTrigger>
+                  <SelectContent className="bg-primary text-white ">
+                    <SelectItem value="Baner">Baner</SelectItem>
+                    <SelectItem value="Balewadi">Balewadi</SelectItem>
+                    <SelectItem value="Wakad">Wakad</SelectItem>
+                    <SelectItem value="Pimple Nilakh">Pimple Nilakh</SelectItem>
+
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div>
+                <label className="mb-2 block text-sm font-medium">Bedrooms</label>
+                <Select onValueChange={setBedrooms}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select bedrooms" />
+                  </SelectTrigger>
+                  <SelectContent className="bg-primary text-white">
+                    <SelectItem value="1BHK">1 BHK</SelectItem>
+                    <SelectItem value="2BHK">2 BHK</SelectItem>
+                    <SelectItem value="3BHK">3 BHK</SelectItem>
+                    <SelectItem value="4BHK">4 BHK</SelectItem>
+                    <SelectItem value="5BHK">5 BHK</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+            </>
+          )}
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {filteredProperties.map((property) => (
+            <Card
+              key={property.id}
+              className="overflow-hidden cursor-pointer transition-transform hover:scale-105"
+              onClick={() => navigate(`/property/${property.id}`)}
+            >
+              <img
+                src={property.images[0]}
+                alt={property.title}
+                className="h-48 w-full object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold  text-white">{property.title}</h3>
+                <p className="text-lg font-bold text-white">
+                  {formatPrice(property.price)}
+                </p>
+                <div className="mt-2 text-sm text-white">
+                  <p>{property.location}</p>
+                  {property.type === "residential" && <p>{property.bedrooms}</p>}
+                  <p>{property.type.charAt(0).toUpperCase() + property.type.slice(1)}</p>
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
       </div>
-    </div>
     </>
   );
 };

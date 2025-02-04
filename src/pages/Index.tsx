@@ -77,7 +77,7 @@ const Index = () => {
       title: "24k Altura",
       description: "A collection of premium flats in Baner By Kolte Patil",
       image: "/24kaltura.jpeg",
-      link: "property/GADuuN6XfhAWVQdoRu8p",
+      link: "/property/GADuuN6XfhAWVQdoRu8p",
       stats: {
         units: "50 Units",
         value: "₹2.80CR",
@@ -133,7 +133,7 @@ const Index = () => {
             <Button
               size="lg"
               variant="outline"
-              className="animate-fade-up border-white text-white hover:bg-[#010f4a] hover:text-white"
+              className="animate-fade-up border-white text-white hover:bg-primary hover:text-white"
               onClick={() => navigate("/contact")}
             >
               Contact Us
@@ -143,7 +143,7 @@ const Index = () => {
       </section>
 
       {/* Featured Properties Section */}
-      <section className="bg-[#010f4a] py-20">
+      <section className="bg-primary py-20">
         <div className="container">
           <h2 className="text-center font-display text-4xl font-bold text-white">
             Featured Properties
@@ -178,7 +178,7 @@ const Index = () => {
             <Button
               size="lg"
               onClick={() => navigate("/properties")}
-              className="bg-primary hover:bg-primary/90 text-white"
+              className="bg-[#010f4a] hover:bg-primary/90 text-white"
             >
               View All Properties
             </Button>
@@ -187,14 +187,14 @@ const Index = () => {
       </section>
 
       {/* Advantages Section */}
-      <section className="py-20 bg-[#010f4a]">
+      <section className="py-20 bg-primary">
         <div className="container">
           <h2 className="text-center font-display text-4xl font-bold text-white">
             Why Invest in Real Estate?
           </h2>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {advantages.map((advantage, index) => (
-              <div key={index} className="flex flex-col items-center rounded-lg bg-[#010f4a] p-6 text-center shadow-md transition-all hover:shadow-xl">
+              <div key={index} className="flex flex-col items-center rounded-lg bg-primary p-6 text-center shadow-md transition-all hover:shadow-xl">
                 <advantage.icon className="h-12 w-12 text-secondary" />
                 <h3 className="mt-4 font-display text-xl font-bold text-white">
                   {advantage.title}
@@ -207,7 +207,7 @@ const Index = () => {
       </section>
 
       {/* Portfolio Work Section */}
-      <section className="py-20 bg-[#010f4a]">
+      <section className="py-20 bg-primary">
         <div className="container">
           <h2 className="text-center font-display text-4xl font-bold text-white">
             Our Portfolio
@@ -219,7 +219,7 @@ const Index = () => {
             {portfolioWorks.map((work, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-lg bg-[#010f4a] shadow-lg transition-all hover:shadow-xl cursor-pointer"
+                className="group relative overflow-hidden rounded-lg bg-primary shadow-lg transition-all hover:shadow-xl cursor-pointer"
                 onClick={() => window.open(work.link, "_blank")} // Opens in a new tab
               >
                 <div className="aspect-video overflow-hidden">
@@ -257,14 +257,14 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-[#010f4a] py-20">
+      <section className="bg-primary py-20">
         <div className="container">
           <h2 className="text-center font-display text-4xl font-bold text-white">
             What Our Clients Say
           </h2>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="rounded-lg bg-[#010f4a] p-6 shadow-md">
+              <div key={index} className="rounded-lg bg-primary p-6 shadow-md">
                 <div className="flex items-center gap-4">
                   <img
                     src={testimonial.image}
@@ -286,14 +286,14 @@ const Index = () => {
       </section>
 
       {/* Why Buy a Property Section */}
-      <section className="py-20 bg-[#010f4a]">
+      <section className="py-20 bg-primary">
         <div className="container">
           <h2 className="text-center font-display text-4xl font-bold text-white">
             Why Buy a Property Now?
           </h2>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             <div className="space-y-6">
-              <div className="rounded-lg bg-[#010f4a] p-6">
+              <div className="rounded-lg bg-primary p-6">
                 <h3 className="font-display text-xl font-bold text-white">
                   Low Interest Rates
                 </h3>
@@ -301,7 +301,7 @@ const Index = () => {
                   Take advantage of historically low interest rates to secure your dream property with affordable monthly payments.
                 </p>
               </div>
-              <div className="rounded-lg bg-[#010f4a] p-6">
+              <div className="rounded-lg bg-primary p-6">
                 <h3 className="font-display text-xl font-bold text-white">
                   Growing Market Value
                 </h3>
@@ -309,7 +309,7 @@ const Index = () => {
                   Real estate consistently appreciates over time, making it a solid long-term investment for your future.
                 </p>
               </div>
-              <div className="rounded-lg bg-[#010f4a] p-6">
+              <div className="rounded-lg bg-primary p-6">
                 <h3 className="font-display text-xl font-bold text-white">
                   Tax Benefits
                 </h3>
@@ -330,7 +330,7 @@ const Index = () => {
       </section>
 
       {/* Investment Process Section */}
-      <section className="bg-[#010f4a] py-20">
+      <section className="bg-primary py-20">
         <div className="container">
           <h2 className="text-center font-display text-4xl font-bold text-white">
             Your Investment Journey
@@ -339,7 +339,7 @@ const Index = () => {
             We make property investment simple and straightforward
           </p>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="relative rounded-lg bg-[#010f4a] p-6 shadow-md">
+            <div className="relative rounded-lg bg-primary p-6 shadow-md">
               <div className="absolute -top-4 left-4 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white">
                 1
               </div>
@@ -350,7 +350,7 @@ const Index = () => {
                 Meet with our experts to discuss your investment goals and preferences.
               </p>
             </div>
-            <div className="relative rounded-lg bg-[#010f4a] p-6 shadow-md">
+            <div className="relative rounded-lg bg-primary p-6 shadow-md">
               <div className="absolute -top-4 left-4 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white">
                 2
               </div>
@@ -361,7 +361,7 @@ const Index = () => {
                 Browse our curated selection of properties that match your criteria.
               </p>
             </div>
-            <div className="relative rounded-lg bg-[#010f4a] p-6 shadow-md">
+            <div className="relative rounded-lg bg-primary p-6 shadow-md">
               <div className="absolute -top-4 left-4 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white">
                 3
               </div>
@@ -372,7 +372,7 @@ const Index = () => {
                 We handle all the paperwork and legal requirements for a smooth process.
               </p>
             </div>
-            <div className="relative rounded-lg bg-[#010f4a] p-6 shadow-md">
+            <div className="relative rounded-lg bg-primary p-6 shadow-md">
               <div className="absolute -top-4 left-4 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white">
                 4
               </div>
@@ -388,7 +388,7 @@ const Index = () => {
       </section>
 
       {/* Market Insights Section */}
-      <section className="py-20 bg-[#010f4a]">
+      <section className="py-20 bg-primary">
         <div className="container">
           <h2 className="text-center font-display text-4xl font-bold text-white">
             Market Insights
@@ -409,15 +409,15 @@ const Index = () => {
                 </p>
               </div>
               <div className="grid gap-4">
-                <div className="rounded-lg bg-[#010f4a] p-4 shadow-md">
+                <div className="rounded-lg bg-primary p-4 shadow-md">
                   <h4 className="font-bold text-white">Property Value Growth</h4>
                   <p className="text-white">Average annual appreciation of 5-7% in prime locations</p>
                 </div>
-                <div className="rounded-lg bg-[#010f4a] p-4 shadow-md">
+                <div className="rounded-lg bg-primary p-4 shadow-md">
                   <h4 className="font-bold text-white">Rental Yield</h4>
                   <p className="text-white">Consistent rental yields of 3-5% in residential sectors</p>
                 </div>
-                <div className="rounded-lg bg-[#010f4a] p-4 shadow-md">
+                <div className="rounded-lg bg-primary p-4 shadow-md">
                   <h4 className="font-bold text-white">Market Demand</h4>
                   <p className="text-white">Growing demand in premium residential segments</p>
                 </div>
@@ -428,7 +428,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#010f4a] py-12 text-white">
+      <footer className="bg-primary py-12 text-white">
         <div className="container">
           <div className="grid gap-8 md:grid-cols-3">
             <div>
@@ -455,7 +455,7 @@ const Index = () => {
                   href="https://www.youtube.com/@Sangram_gaikwad_realestate"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full bg-[#010f4a] p-2 text-white transition-colors hover:bg-secondary hover:text-white"
+                  className="rounded-full bg-primary p-2 text-white transition-colors hover:bg-secondary hover:text-white"
                 >
                   <Youtube className="h-6 w-6" />
                 </a>
@@ -463,7 +463,7 @@ const Index = () => {
                   href="https://www.instagram.com/sangram_gaikwad_realestate?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full bg-[#010f4a] p-2 text-white transition-colors hover:bg-secondary hover:text-white"
+                  className="rounded-full bg-primary p-2 text-white transition-colors hover:bg-secondary hover:text-white"
                 >
                   <Instagram className="h-6 w-6" />
                 </a>
@@ -471,7 +471,7 @@ const Index = () => {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full bg-[#010f4a] p-2 text-white transition-colors hover:bg-secondary hover:text-white"
+                  className="rounded-full bg-primary p-2 text-white transition-colors hover:bg-secondary hover:text-white"
                 >
                   <Twitter className="h-6 w-6" />
                 </a>
@@ -479,7 +479,7 @@ const Index = () => {
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full bg-[#010f4a] p-2 text-white transition-colors hover:bg-secondary hover:text-white"
+                  className="rounded-full bg-primary p-2 text-white transition-colors hover:bg-secondary hover:text-white"
                 >
                   <Linkedin className="h-6 w-6" />
                 </a>
@@ -487,7 +487,7 @@ const Index = () => {
                   href="https://wa.me/919881950536"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full bg-[#010f4a] p-2 text-white transition-colors hover:bg-secondary hover:text-white"
+                  className="rounded-full bg-primary p-2 text-white transition-colors hover:bg-secondary hover:text-white"
                 >
                   <MessageSquare className="h-6 w-6" />
                 </a>

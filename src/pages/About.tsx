@@ -11,93 +11,57 @@ const About = () => {
         <link rel="canonical" href="https://sangramgaikwad.com/about" />
       </Helmet>
 
-    <div className="min-h-screen bg-[#010f4a]">
-      <div className="container mx-auto px-4 py-16">
-        {/* Hero Section */}
-        <div className="animate-fade-up mb-16 text-center">
-          <h1 className="mb-6 font-display text-5xl font-bold text-white">About Sangram Realty</h1>
-          <p className="mx-auto max-w-3xl text-lg text-white">
-            A leading real estate company in Pune, specializing in both residential and commercial properties. 
-            With years of experience in the industry, we have established ourselves as a trusted name in real estate services.
-          </p>
-        </div>
-
-        {/* Vision & Mission */}
-        <div className="mb-16 grid gap-8 md:grid-cols-2">
-          <div className="animate-fade-up rounded-lg bg-[#010f4a] p-8 shadow-lg [--animation-delay:200ms]">
-            <h2 className="mb-4 font-display text-2xl font-semibold  text-white text-white">Our Vision</h2>
-            <p className="text-white">
-              To be the most trusted and respected real estate company in Pune, known for our commitment 
-              to excellence and customer satisfaction.
+      <div className="min-h-screen bg-primary">
+        <div className="container mx-auto px-4 py-16">
+          {/* Hero Section */}
+          <div className="animate-fade-up mb-16 text-center">
+            <h1 className="mb-6 font-display text-5xl font-bold text-white">About Sangram Realty</h1>
+            <p className="mx-auto max-w-3xl text-lg text-white">
+              Sangram Realty is led by Sangram, an MBA graduate with extensive experience in the real estate industry. 
+              Having worked at Kolte Patil, one of Pune's top real estate firms, he has gained deep insights into property management and development. 
+              Currently, he is actively working on multiple Kolte Patil projects, bringing expertise and excellence to every deal.
             </p>
           </div>
-          <div className="animate-fade-up rounded-lg bg-[#010f4a] p-8 shadow-lg [--animation-delay:400ms]">
-            <h2 className="mb-4 font-display text-2xl font-semibold  text-white text-white">Our Mission</h2>
-            <p className="text-white">
-              To provide exceptional real estate services while maintaining the highest standards of 
-              professionalism, integrity, and commitment to our clients.
-            </p>
-          </div>
-        </div>
 
-        {/* Core Values */}
-        <div className="mb-16">
-          <h2 className="mb-8 text-center font-display text-3xl font-bold text-white">Our Core Values</h2>
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="animate-fade-up rounded-lg bg-[#010f4a] p-6 text-center shadow-lg transition-transform hover:scale-105 [--animation-delay:200ms]">
-              <Shield className="mx-auto mb-4 h-12 w-12 text-white" />
-              <h3 className="mb-2 font-semibold  text-white">Trust & Integrity</h3>
-              <p className="text-white">Building lasting relationships through honest dealings</p>
+          {/* Vision & Mission */}
+          <div className="mb-16 grid gap-8 md:grid-cols-2">
+            <div className="animate-fade-up rounded-lg bg-primary p-8 shadow-lg [--animation-delay:200ms]">
+              <h2 className="mb-4 font-display text-2xl font-semibold text-white">Our Vision</h2>
+              <p className="text-white">
+                To be the most trusted and respected real estate company in Pune, known for our commitment to excellence and customer satisfaction.
+              </p>
             </div>
-            <div className="animate-fade-up rounded-lg bg-[#010f4a] p-6 text-center shadow-lg transition-transform hover:scale-105 [--animation-delay:400ms]">
-              <Trophy className="mx-auto mb-4 h-12 w-12 text-white" />
-              <h3 className="mb-2 font-semibold  text-white">Excellence</h3>
-              <p className="text-white">Delivering superior service and results</p>
-            </div>
-            <div className="animate-fade-up rounded-lg bg-[#010f4a] p-6 text-center shadow-lg transition-transform hover:scale-105 [--animation-delay:600ms]">
-              <Target className="mx-auto mb-4 h-12 w-12 text-white" />
-              <h3 className="mb-2 font-semibold  text-white">Client Focus</h3>
-              <p className="text-white">Putting our clients' needs first</p>
+            <div className="animate-fade-up rounded-lg bg-primary p-8 shadow-lg [--animation-delay:400ms]">
+              <h2 className="mb-4 font-display text-2xl font-semibold text-white">Our Mission</h2>
+              <p className="text-white">
+                To provide exceptional real estate services while maintaining the highest standards of professionalism, integrity, and commitment to our clients.
+              </p>
             </div>
           </div>
-        </div>
 
-        {/* Why Choose Us */}
-        <div className="animate-fade-up rounded-lg bg-[#010f4a] p-8 shadow-lg [--animation-delay:800ms]">
-          <h2 className="mb-8 text-center font-display text-3xl font-bold text-white">Why Choose Us</h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="flex items-start gap-4">
-              <Building className="h-6 w-6 shrink-0 text-white" />
-              <div>
-                <h3 className="mb-2 font-semibold  text-white text-white">Extensive Portfolio</h3>
-                <p className="text-white">Access to a wide range of premium properties</p>
+          {/* Core Values */}
+          <div className="mb-16">
+            <h2 className="mb-8 text-center font-display text-3xl font-bold text-white">Our Core Values</h2>
+            <div className="grid gap-6 md:grid-cols-3">
+              <div className="animate-fade-up rounded-lg bg-primary p-6 text-center shadow-lg transition-transform hover:scale-105 [--animation-delay:200ms]">
+                <Shield className="mx-auto mb-4 h-12 w-12 text-white" />
+                <h3 className="mb-2 font-semibold text-white">Trust & Integrity</h3>
+                <p className="text-white">Building lasting relationships through honest dealings</p>
               </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <Users className="h-6 w-6 shrink-0 text-white" />
-              <div>
-                <h3 className="mb-2 font-semibold  text-white text-white">Expert Team</h3>
-                <p className="text-white">Professional and experienced real estate advisors</p>
+              <div className="animate-fade-up rounded-lg bg-primary p-6 text-center shadow-lg transition-transform hover:scale-105 [--animation-delay:400ms]">
+                <Trophy className="mx-auto mb-4 h-12 w-12 text-white" />
+                <h3 className="mb-2 font-semibold text-white">Excellence</h3>
+                <p className="text-white">Delivering superior service and results</p>
               </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <Shield className="h-6 w-6 shrink-0 text-white" />
-              <div>
-                <h3 className="mb-2 font-semibold  text-white text-white">Transparent Dealings</h3>
-                <p className="text-white">Clear and honest communication throughout</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <Trophy className="h-6 w-6 shrink-0 text-white" />
-              <div>
-                <h3 className="mb-2 font-semibold  text-white">Market Knowledge</h3>
-                <p className="text-white">Deep understanding of local real estate trends</p>
+              <div className="animate-fade-up rounded-lg bg-primary p-6 text-center shadow-lg transition-transform hover:scale-105 [--animation-delay:600ms]">
+                <Target className="mx-auto mb-4 h-12 w-12 text-white" />
+                <h3 className="mb-2 font-semibold text-white">Client Focus</h3>
+                <p className="text-white">Putting our clients' needs first</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </>
   );
 };

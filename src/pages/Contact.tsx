@@ -38,7 +38,7 @@ const Contact = () => {
         <link rel="canonical" href="https://sangramgaikwad.com/contact" />
       </Helmet>
 
-    <div className="min-h-screen bg-[#010f4a] py-12">
+    <div className="min-h-screen bg-primary py-12">
       <div className="container mx-auto px-4">
         <div className="animate-fade-up text-center">
           <h1 className="mb-4 font-display text-4xl font-bold text-white">Get in Touch</h1>
@@ -48,7 +48,7 @@ const Contact = () => {
         </div>
 
         <div className="grid gap-12 md:grid-cols-2">
-          <div className="space-y-8 rounded-lg bg-[#010f4a] p-8 shadow-lg">
+          <div className="space-y-8 rounded-lg bg-primary p-8 shadow-lg">
             <div className="animate-fade-up [--animation-delay:200ms]">
               <div className="flex items-center gap-4">
                 <div className="rounded-full bg-primary/10 p-3">
@@ -121,7 +121,7 @@ const Contact = () => {
           </div>
 
           <div className="animate-fade-up [--animation-delay:400ms]">
-            <div className="rounded-lg bg-[#010f4a] p-8 shadow-lg">
+            <div className="rounded-lg bg-primary p-8 shadow-lg">
               <h2 className="mb-6 font-display text-2xl font-semibold  text-white">Send us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>

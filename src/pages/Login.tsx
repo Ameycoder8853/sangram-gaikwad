@@ -85,8 +85,8 @@ const Login = () => {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[#010f4a] ">
-      <div className="w-full max-w-md rounded-lg bg-[#010f4a] p-8 shadow-lg">
+    <div className="flex min-h-screen items-center justify-center bg-primary ">
+      <div className="w-full max-w-md rounded-lg bg-primary p-8 shadow-lg">
         <Tabs defaultValue="signin" className="w-full">
           <TabsList className="grid w-full grid-cols-2 text-white">
             <TabsTrigger value="signin">Sign In</TabsTrigger>

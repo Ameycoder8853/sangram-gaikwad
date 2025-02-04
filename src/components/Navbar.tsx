@@ -79,7 +79,7 @@ export const Navbar = () => {
   );
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-[#010f4a]/80 backdrop-blur-sm">
+    <nav className="sticky top-0 z-50 w-full border-b bg-primary/80 backdrop-blur-sm">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2 text-xl font-bold text-white">
           <House className="h-6 w-6" />
@@ -104,7 +104,7 @@ export const Navbar = () => {
               <Menu className="h-6 w-6" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="left" className="w-[240px] bg-[#010f4a]/95 backdrop-blur-sm text-white">
+          <SheetContent side="left" className="w-[240px] bg-primary/95 backdrop-blur-sm text-white">
             <div className="flex flex-col gap-4 py-4">
               <NavLinks />
               {user ? (
