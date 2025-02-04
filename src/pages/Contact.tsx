@@ -101,9 +101,7 @@ const Contact = () => {
             <div className="animate-fade-up [--animation-delay:1000ms]">
               <h3 className="mb-4 font-semibold  text-white">Connect With Us</h3>
               <div className="flex gap-4">
-                <a href="#" className="rounded-full text-white bg-primary/10 p-3 transition-colors hover:bg-primary hover:text-white">
-                  <Twitter className="h-5 w-5" />
-                </a>
+                
                 <a href="#" className="rounded-full text-white bg-primary/10 p-3 transition-colors hover:bg-primary hover:text-white">
                   <Linkedin className="h-5 w-5" />
                 </a>
