@@ -74,9 +74,9 @@ const Index = () => {
 
   const portfolioWorks = [
     {
-      title: "Balmoral Riverside",
-      description: "A collection of premium flats in Balewadi called Balmoral Riverside,
-      image: "https://firebasestorage.googleapis.com/v0/b/videomatic-ai-5c2b2.appspot.com/o/properties%2F1738669088486_balmoral9.jpg?alt=media&token=ff812ce8-4b61-486d-9f79-c829a2966954",
+      title: "24k Altura",
+      description: "A collection of premium flats in Baner By Kolte Patil",
+      image: "/24kaltura.jpeg",
       link: "/property/GADuuN6XfhAWVQdoRu8p",
       stats: {
         units: "50 Units",
@@ -97,10 +97,10 @@ const Index = () => {
       }
     },
     {
-      title: "Elina Tower",
-      description: "A collection of premium flats in Pimple Nilakh By Kolte Patil",
-      image: "/elina 3.jpg",
-      link: "/property/6zYV33QAIEPjO6sBCxnc",
+      title: "Balmoral Riverside",
+      description: "A collection of premium flats in Balewadi called Balmoral Riverside",
+      image: "https://firebasestorage.googleapis.com/v0/b/videomatic-ai-5c2b2.appspot.com/o/properties%2F1738669088486_balmoral9.jpg?alt=media&token=ff812ce8-4b61-486d-9f79-c829a2966954",
+      link: "/property/kUMSV0e8gTyVPWOQhrmQ",
 
       stats: {
         units: "50 Units",
@@ -234,7 +234,7 @@ const Index = () => {
                     {work.title}
                   </h3>
                   <p className="mt-2 text-white">{work.description}</p>
-                  </div>
+
                 </div>
               </div>
             ))}
@@ -454,7 +454,7 @@ const Index = () => {
                 >
                   <Instagram className="h-6 w-6" />
                 </a>
-          
+              
                 <a
                   href="https://linkedin.com"
                   target="_blank"
