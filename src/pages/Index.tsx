@@ -13,7 +13,7 @@ const Index = () => {
       title: "24k Altura",
       price: "2,80,00,000",
       location: "Baner",
-      image: "public/24kaltura.jpeg",
+      image: "/24kaltura.jpeg",
       link:"/property/GADuuN6XfhAWVQdoRu8p"
     },
     {
@@ -21,7 +21,7 @@ const Index = () => {
       title: "24k Manor",
       price: "3,37,00,000",
       location: "Pimple Nilakh",
-      image: "public/manor4.jpg",
+      image: "/manor4.jpg",
       link:"/property/Ljspai3ads6jSWRjJt18"
     },
     {
@@ -29,7 +29,7 @@ const Index = () => {
       title: "Elina Tower",
       price: "1,39,00,000",
       location: "Pimple Nilakh",
-      image: "public/elina 3.jpg",
+      image: "/elina 3.jpg",
       link:"/property/6zYV33QAIEPjO6sBCxnc"
     },
   ];
@@ -76,7 +76,7 @@ const Index = () => {
     {
       title: "24k Altura",
       description: "A collection of premium flats in Baner By Kolte Patil",
-      image: "public/24kaltura.jpeg",
+      image: "/24kaltura.jpeg",
       link: "property/GADuuN6XfhAWVQdoRu8p",
       stats: {
         units: "50 Units",
@@ -87,7 +87,7 @@ const Index = () => {
     {
       title: "24k Manor",
       description: "A collection of premium flats in Pimple Nilakh By Kolte Patil",
-      image: "public/manor4.jpg",
+      image: "/manor4.jpg",
       link: "/property/Ljspai3ads6jSWRjJt18",
 
       stats: {
@@ -99,7 +99,7 @@ const Index = () => {
     {
       title: "Elina Tower",
       description: "A collection of premium flats in Pimple Nilakh By Kolte Patil",
-      image: "public/elina 3.jpg",
+      image: "/elina 3.jpg",
       link: "/property/6zYV33QAIEPjO6sBCxnc",
 
       stats: {
