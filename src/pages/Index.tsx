@@ -234,19 +234,6 @@ const Index = () => {
                     {work.title}
                   </h3>
                   <p className="mt-2 text-white">{work.description}</p>
-                  <div className="mt-4 grid grid-cols-3 gap-4 border-t border-gray-100 pt-4">
-                    <div className="text-center">
-                      <p className="text-sm text-gray-500">Units</p>
-                      <p className="font-bold text-white">{work.stats.units}</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-sm text-gray-500">Value</p>
-                      <p className="font-bold text-white">{work.stats.value}</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-sm text-gray-500">Completed</p>
-                      <p className="font-bold text-white">{work.stats.completion}</p>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -467,14 +454,7 @@ const Index = () => {
                 >
                   <Instagram className="h-6 w-6" />
                 </a>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full bg-primary p-2 text-white transition-colors hover:bg-secondary hover:text-white"
-                >
-                  <Twitter className="h-6 w-6" />
-                </a>
+          
                 <a
                   href="https://linkedin.com"
                   target="_blank"
