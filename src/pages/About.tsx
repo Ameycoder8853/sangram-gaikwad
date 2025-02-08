@@ -15,11 +15,11 @@ const About = () => {
         <div className="container mx-auto px-4 py-16">
           {/* Hero Section */}
           <div className="animate-fade-up mb-16 text-center">
-            <h1 className="mb-6 font-display text-5xl font-bold text-white">About Sangram Realty</h1>
+            <h1 className="mb-6 font-display text-5xl font-bold text-white">About Sangram Gaikwad Realestate</h1>
             <p className="mx-auto max-w-3xl text-lg text-white">
-              Sangram Realty is led by Sangram, an MBA graduate with extensive experience in the real estate industry. 
-              Having worked at Kolte Patil, one of Pune's top real estate firms, he has gained deep insights into property management and development. 
-              Currently, he is actively working on multiple Kolte Patil projects, bringing expertise and excellence to every deal.
+              Sangram Gaikwad is led by Sangram, an MBA graduate with extensive experience in the real estate industry. 
+              He had worked at Kolte Patil, one of Pune's top real estate firms, he has gained deep insights into property management and development. 
+              Currently, he is actively working on 200+ projects in Pune and Dubai, bringing expertise and excellence to every deal.
             </p>
           </div>
 
