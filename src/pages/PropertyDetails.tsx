@@ -104,7 +104,7 @@ const PropertyDetails = () => {
                 </div>
               )}
               <div>
-                <h2 className="text-xl font-semibold  text-white">Area</h2>
+                <h2 className="text-xl font-semibold  text-white">Carpet Area</h2>
                 <p className="text-gray-300">{property.area}</p>
               </div>
               <div>
