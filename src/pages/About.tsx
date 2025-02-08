@@ -7,7 +7,7 @@ const About = () => {
       <Helmet>
         <title>About Sangram Realty | Leading Real Estate Agent in Pune</title>
         <meta name="description" content="Sangram Realty is a trusted name in Pune's real estate market. Learn about our expertise, values, and commitment to excellence in property services." />
-        <meta name="keywords" content="real estate company pune, property consultants pune, real estate agent pune, top real estate agents pune, property dealers pune, real estate services pune, trusted property agents pune, real estate experts pune, property management pune, real estate consultation pune, property investment advisors pune, real estate market pune, property valuation pune, real estate development pune, property solutions pune, real estate professionals pune, property assistance pune" />
+        <meta name="keywords" content="Sangram Gaikwad,Sangram Gaikwad Realestate,real estate company pune, property consultants pune, real estate agent pune, top real estate agents pune, property dealers pune, real estate services pune, trusted property agents pune, real estate experts pune, property management pune, real estate consultation pune, property investment advisors pune, real estate market pune, property valuation pune, real estate development pune, property solutions pune, real estate professionals pune, property assistance pune" />
         <link rel="canonical" href="https://sangramgaikwad.com/about" />
       </Helmet>
 
@@ -19,7 +19,7 @@ const About = () => {
             <p className="mx-auto max-w-3xl text-lg text-white">
               Sangram Gaikwad, an MBA graduate with extensive experience in the real estate industry. 
               He had worked at Kolte Patil, one of Pune's top real estate firms, he has gained deep insights into property management and development. 
-              Currently, he is actively working on 200+ projects in Pune and Dubai, bringing expertise and excellence to every deal.
+              Currently, he is actively working on 200+ Rera Approved projects in Pune and Dubai, bringing expertise and excellence to every deal.
             </p>
           </div>
 
