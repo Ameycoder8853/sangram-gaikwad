@@ -17,7 +17,7 @@ const About = () => {
           <div className="animate-fade-up mb-16 text-center">
             <h1 className="mb-6 font-display text-5xl font-bold text-white">About Sangram Gaikwad Realestate</h1>
             <p className="mx-auto max-w-3xl text-lg text-white">
-              Sangram Gaikwad is led by Sangram, an MBA graduate with extensive experience in the real estate industry. 
+              Sangram Gaikwad, an MBA graduate with extensive experience in the real estate industry. 
               He had worked at Kolte Patil, one of Pune's top real estate firms, he has gained deep insights into property management and development. 
               Currently, he is actively working on 200+ projects in Pune and Dubai, bringing expertise and excellence to every deal.
             </p>
