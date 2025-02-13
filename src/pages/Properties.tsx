@@ -90,8 +90,8 @@ const Properties = () => {
             <label className="mb-2 block text-sm font-medium text-white">Price Range</label>
             <Slider
               className=" [&>span]:bg-gray-900"
-              defaultValue={[0, 50000000]}
-              max={50000000}
+              defaultValue={[0, 5500000000]}
+              max={5500000000}
               step={500000}
               onValueChange={setPriceRange}
             />
