@@ -220,6 +220,7 @@ const AdminProperties = () => {
                       <SelectValue placeholder="Select location" />
                     </SelectTrigger>
                     <SelectContent className="bg-primary text-white">
+<SelectItem value="dubai">Dubai</SelectItem>
                     <SelectItem value="Baner">Baner</SelectItem>
                     <SelectItem value="Balewadi">Balewadi</SelectItem>
                     <SelectItem value="Wakad">Wakad</SelectItem>
