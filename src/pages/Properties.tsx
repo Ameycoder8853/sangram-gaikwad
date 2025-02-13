@@ -128,7 +128,25 @@ const Properties = () => {
                     <SelectItem value="Baner">Baner</SelectItem>
                     <SelectItem value="Balewadi">Balewadi</SelectItem>
                     <SelectItem value="Wakad">Wakad</SelectItem>
-                    <SelectItem value="Pimple Nilakh">Pimple Nilakh</SelectItem>
+                    <SelectItem value="Tathawade">Tathawade</SelectItem>
+                    <SelectItem value="Punawale">Punawale</SelectItem>
+                    <SelectItem value="Ravet">Ravet</SelectItem>
+                    <SelectItem value="Bavdhan">Bavdhan </SelectItem>
+                    <SelectItem value="Pashan">Pashan</SelectItem>
+                    <SelectItem value="Baner annex">Baner annex </SelectItem>
+                    <SelectItem value="Sus">Sus </SelectItem>
+                    <SelectItem value="Hinjewadi phase 1">Hinjewadi phase 1 </SelectItem>
+                    <SelectItem value="Hinjewadi phase 2">Hinjewadi phase 2 </SelectItem>
+                    <SelectItem value="Hinjewadi phase 3">Hinjewadi phase 3  </SelectItem>
+                    <SelectItem value="Bhosale nagar">Bhosale nagar  </SelectItem>
+                    <SelectItem value="Aundh">Aundh </SelectItem>
+                    <SelectItem value="Kharadi">Kharadi</SelectItem>
+                    <SelectItem value="Wagholi">Wagholi</SelectItem>
+                    <SelectItem value="Dhanori">Dhanori</SelectItem>
+                    <SelectItem value="Nibm">Nibm</SelectItem>
+                    <SelectItem value="Koregaon park">Koregaon park</SelectItem>
+
+
 
                   </SelectContent>
                 </Select>
