@@ -31,7 +31,7 @@ const formatPrice = (price: number) => {
 
 const Properties = () => {
   const navigate = useNavigate();
-  const [priceRange, setPriceRange] = useState([0, 50000000]);
+  const [priceRange, setPriceRange] = useState([0, 5500000000]);
   const [propertyType, setPropertyType] = useState<string>("");
   const [location, setLocation] = useState<string>("");
   const [bedrooms, setBedrooms] = useState<string>("");
@@ -125,6 +125,8 @@ const Properties = () => {
                     <SelectValue placeholder="Select location" />
                   </SelectTrigger>
                   <SelectContent className="bg-primary text-white ">
+<SelectItem value="dubai">Dubai</SelectItem>
+
                     <SelectItem value="Baner">Baner</SelectItem>
                     <SelectItem value="Balewadi">Balewadi</SelectItem>
                     <SelectItem value="Wakad">Wakad</SelectItem>
@@ -144,7 +146,7 @@ const Properties = () => {
                     <SelectItem value="Wagholi">Wagholi</SelectItem>
                     <SelectItem value="Dhanori">Dhanori</SelectItem>
                     <SelectItem value="Nibm">Nibm</SelectItem>
-                    <SelectItem value="Koregaon park">Koregaon park</SelectItem>
+                    <SelectItem value="Koregaon park">Koregaon park</SelectItem>
 
 
 
