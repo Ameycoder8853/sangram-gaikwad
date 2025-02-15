@@ -14,13 +14,18 @@ const About = () => {
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-16">
           {/* Hero Section */}
-          <div className="animate-fade-up mb-16 text-center">
-            <h1 className="mb-6 font-display text-5xl font-bold text-white">About Sangram Gaikwad Realestate</h1>
-            <p className="mx-auto max-w-3xl text-lg text-white">
-              Sangram Gaikwad, an MBA graduate with extensive experience in the real estate industry. 
-              He had worked at Kolte Patil, one of Pune's top real estate firms, he has gained deep insights into property management and development. 
-              Currently, he is actively working on 200+ Rera Approved projects in Pune and Dubai, bringing expertise and excellence to every deal.
-            </p>
+          <div className="animate-fade-up mb-16 flex flex-col md:flex-row items-center text-center md:text-left">
+            <div className="md:w-2/3">
+              <h1 className="mb-6 font-display text-5xl font-bold text-white">About Sangram Gaikwad Realestate</h1>
+              <p className="mx-auto max-w-3xl text-lg text-white">
+                Sangram Gaikwad, an MBA graduate with extensive experience in the real estate industry.
+                He had worked at Kolte Patil, one of Pune's top real estate firms, he has gained deep insights into property management and development.
+                Currently, he is actively working on 200+ Rera Approved projects in Pune and Dubai, bringing expertise and excellence to every deal.
+              </p>
+            </div>
+
+            {/* Adjusted Logo Position */}
+            <img src="/logo.JPG" alt="Logo" className="h-60 w-60 rounded-full mt-6 md:mt-0 md:ml-3" />
           </div>
 
           {/* Vision & Mission */}
