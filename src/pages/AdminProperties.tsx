@@ -180,7 +180,7 @@ const AdminProperties = () => {
             <div>
               <label className="mb-2 block text-sm font-medium">Title</label>
               <Input
-              className="text-gray-900"
+                className="text-gray-900"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 required
@@ -189,7 +189,7 @@ const AdminProperties = () => {
             <div>
               <label className="mb-2 block text-sm font-medium">Price (₹)</label>
               <Input
-              className="text-gray-900"
+                className="text-gray-900"
                 type="number"
                 value={price}
                 onChange={(e) => setPrice(Number(e.target.value))}
@@ -202,63 +202,129 @@ const AdminProperties = () => {
                 value={propertyType}
                 onValueChange={(value: "residential" | "commercial") => setPropertyType(value)}
               >
-                <SelectTrigger>
+                <SelectTrigger className="text-white">
                   <SelectValue placeholder="Select type" />
                 </SelectTrigger>
-                <SelectContent className="bg-primary text-white ">
-                  <SelectItem value="residential">Residential</SelectItem>
-                  <SelectItem value="commercial">Commercial</SelectItem>
+                <SelectContent className="bg-primary text-white">
+                  <SelectItem
+                    value="residential"
+                    className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
+                  >
+                    Residential
+                  </SelectItem>
+                  <SelectItem
+                    value="commercial"
+                    className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
+                  >
+                    Commercial
+                  </SelectItem>
                 </SelectContent>
               </Select>
             </div>
+
             {propertyType === "residential" && (
               <>
                 <div>
                   <label className="mb-2 block text-sm font-medium">Location</label>
                   <Select value={location} onValueChange={setLocation}>
-                    <SelectTrigger>
+                    <SelectTrigger className="text-white">
                       <SelectValue placeholder="Select location" />
                     </SelectTrigger>
                     <SelectContent className="bg-primary text-white">
-<SelectItem value="dubai">Dubai</SelectItem>
-                    <SelectItem value="Baner">Baner</SelectItem>
-                    <SelectItem value="Balewadi">Balewadi</SelectItem>
-                    <SelectItem value="Wakad">Wakad</SelectItem>
-                    <SelectItem value="Tathawade">Tathawade</SelectItem>
-                    <SelectItem value="Punawale">Punawale</SelectItem>
-                    <SelectItem value="Ravet">Ravet</SelectItem>
-                    <SelectItem value="Bavdhan">Bavdhan </SelectItem>
-                    <SelectItem value="Pashan">Pashan</SelectItem>
-                    <SelectItem value="Baner annex">Baner annex </SelectItem>
-                    <SelectItem value="Sus">Sus </SelectItem>
-                    <SelectItem value="Hinjewadi phase 1">Hinjewadi phase 1 </SelectItem>
-                    <SelectItem value="Hinjewadi phase 2">Hinjewadi phase 2 </SelectItem>
-                    <SelectItem value="Hinjewadi phase 3">Hinjewadi phase 3  </SelectItem>
-                    <SelectItem value="Bhosale nagar">Bhosale nagar  </SelectItem>
-                    <SelectItem value="Aundh">Aundh </SelectItem>
-                    <SelectItem value="Kharadi">Kharadi</SelectItem>
-                    <SelectItem value="Wagholi">Wagholi</SelectItem>
-                    <SelectItem value="Dhanori">Dhanori</SelectItem>
-                    <SelectItem value="Nibm">Nibm</SelectItem>
-                    <SelectItem value="Koregaon park">Koregaon park</SelectItem>
+                      <SelectItem value="dubai" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Dubai
+                      </SelectItem>
+                      <SelectItem value="Baner" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Baner
+                      </SelectItem>
+                      <SelectItem value="Balewadi" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Balewadi
+                      </SelectItem>
+                      <SelectItem value="Wakad" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Wakad
+                      </SelectItem>
+                      <SelectItem value="Tathawade" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Tathawade
+                      </SelectItem>
+                      <SelectItem value="Punawale" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Punawale
+                      </SelectItem>
+                      <SelectItem value="Ravet" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Ravet
+                      </SelectItem>
+                      <SelectItem value="Bavdhan" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Bavdhan
+                      </SelectItem>
+                      <SelectItem value="Pashan" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Pashan
+                      </SelectItem>
+                      <SelectItem value="Baner annex" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Baner annex
+                      </SelectItem>
+                      <SelectItem value="Sus" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Sus
+                      </SelectItem>
+                      <SelectItem value="Hinjewadi phase 1" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Hinjewadi phase 1
+                      </SelectItem>
+                      <SelectItem value="Hinjewadi phase 2" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Hinjewadi phase 2
+                      </SelectItem>
+                      <SelectItem value="Hinjewadi phase 3" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Hinjewadi phase 3
+                      </SelectItem>
+                      <SelectItem value="Bhosale nagar" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Bhosale nagar
+                      </SelectItem>
+                      <SelectItem value="Aundh" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Aundh
+                      </SelectItem>
+                      <SelectItem value="Kharadi" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Kharadi
+                      </SelectItem>
+                      <SelectItem value="Wagholi" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Wagholi
+                      </SelectItem>
+                      <SelectItem value="Dhanori" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Dhanori
+                      </SelectItem>
+                      <SelectItem value="Nibm" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Nibm
+                      </SelectItem>
+                      <SelectItem value="Koregaon park" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        Koregaon park
+                      </SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
+
+
                 <div>
                   <label className="mb-2 block text-sm font-medium">Bedrooms</label>
                   <Select value={bedrooms} onValueChange={setBedrooms}>
-                    <SelectTrigger>
+                    <SelectTrigger className="text-white">
                       <SelectValue placeholder="Select bedrooms" />
                     </SelectTrigger>
                     <SelectContent className="bg-primary text-white">
-                      <SelectItem value="1BHK">1 BHK</SelectItem>
-                      <SelectItem value="2BHK">2 BHK</SelectItem>
-                      <SelectItem value="3BHK">3 BHK</SelectItem>
-                      <SelectItem value="4BHK">4 BHK</SelectItem>
-                      <SelectItem value="5BHK">5 BHK</SelectItem>
+                      <SelectItem value="1BHK" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        1 BHK
+                      </SelectItem>
+                      <SelectItem value="2BHK" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        2 BHK
+                      </SelectItem>
+                      <SelectItem value="3BHK" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        3 BHK
+                      </SelectItem>
+                      <SelectItem value="4BHK" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        4 BHK
+                      </SelectItem>
+                      <SelectItem value="5BHK" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+                        5 BHK
+                      </SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
+
               </>
             )}
             <div>
@@ -274,7 +340,7 @@ const AdminProperties = () => {
             <div>
               <label className="mb-2 block text-sm font-medium">Parking</label>
               <Input
-              className="text-gray-900"
+                className="text-gray-900"
                 value={parking}
                 onChange={(e) => setParking(e.target.value)}
                 placeholder="e.g., 2 Cars"
@@ -286,7 +352,7 @@ const AdminProperties = () => {
           <div>
             <label className="mb-2 block text-sm font-medium">Description</label>
             <Textarea
-            className="text-gray-900"
+              className="text-gray-900"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               required
@@ -296,7 +362,7 @@ const AdminProperties = () => {
           <div>
             <label className="mb-2 block text-sm font-medium">Amenities (comma-separated)</label>
             <Input
-            className="text-gray-900"
+              className="text-gray-900"
               value={amenities}
               onChange={(e) => setAmenities(e.target.value)}
               placeholder="Swimming Pool, Gym, 24/7 Security"
@@ -307,7 +373,7 @@ const AdminProperties = () => {
           <div>
             <label className="mb-2 block text-sm font-medium">Images</label>
             <Input
-            className="text-white"
+              className="text-white"
               type="file"
               onChange={(e) => setImages(e.target.files)}
               multiple
