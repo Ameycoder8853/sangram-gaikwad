@@ -26,11 +26,11 @@ const Index = () => {
     },
     {
       id: 3,
-      title: "Elina Tower",
-      price: "1,39,00,000",
-      location: "Pimple Nilakh",
-      image: "/elina 3.jpg",
-      link:"/"
+      title: "The Balmoral Riverside",
+      price: "3,50,00,000",
+      location: "Balewadi",
+      image: "https://firebasestorage.googleapis.com/v0/b/videomatic-ai-5c2b2.appspot.com/o/properties%2F1738669088486_balmoral9.jpg?alt=media&token=ff812ce8-4b61-486d-9f79-c829a2966954",
+      link:"/property/VGxMlamNbaixaW127hNv"
     },
   ];
 
