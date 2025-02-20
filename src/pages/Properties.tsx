@@ -126,7 +126,7 @@ const Properties = () => {
             <>
               <div>
   <label className="mb-2 block text-sm font-medium">Location</label>
-  <Select value={location} onValueChange={setLocation}>
+    <Select value={location} onValueChange={setLocation}>
     <SelectTrigger className="text-white">
       <SelectValue placeholder="Select location" />
     </SelectTrigger>
@@ -200,6 +200,10 @@ const Properties = () => {
       <SelectItem value="Kothrud" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
         Kothrud
       </SelectItem>
+      <SelectItem value="Hinjewadi Phase 1" className="text-white">Hinjewadi Phase 1</SelectItem>
+    <SelectItem value="Hinjewadi Phase 2" className="text-white">Hinjewadi Phase 2</SelectItem>
+    <SelectItem value="Hinjewadi Phase 3" className="text-white">Hinjewadi Phase 3</SelectItem>
+     
      
     </SelectContent>
   </Select>
