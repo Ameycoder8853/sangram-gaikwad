@@ -104,25 +104,25 @@ const Properties = () => {
 
           <div>
             <label className="mb-2 block text-sm font-medium">Property Type</label>
-            <Select onValueChange={setPropertyType}>
-              <SelectTrigger className="text-white">
-                <SelectValue placeholder="Select type" />
-              </SelectTrigger>
-              <SelectContent className="bg-white text-white hover:text-black">
-                <SelectItem
-                  value="residential"
-                  className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
-                >
-                  Residential
-                </SelectItem>
-                <SelectItem
-                  value="commercial"
-                  className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
-                >
-                  Commercial
-                </SelectItem>
-              </SelectContent>
-            </Select>
+           <Select onValueChange={setPropertyType}>
+  <SelectTrigger className="text-white bg-primary border border-gray-300 shadow-md">
+    <SelectValue placeholder="Select type" />
+  </SelectTrigger>
+  <SelectContent className="bg-white text-black border border-gray-300 shadow-lg">
+    <SelectItem
+      value="residential"
+      className="text-black bg-white hover:bg-gray-200 aria-selected:bg-gray-300"
+    >
+      Residential
+    </SelectItem>
+    <SelectItem
+      value="commercial"
+      className="text-black bg-white hover:bg-gray-200 aria-selected:bg-gray-300"
+    >
+      Commercial
+    </SelectItem>
+  </SelectContent>
+</Select>
           </div>
 
 
