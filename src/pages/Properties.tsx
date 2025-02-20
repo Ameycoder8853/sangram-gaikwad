@@ -141,6 +141,9 @@ const Properties = () => {
       <SelectItem value="Baner" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
         Baner
       </SelectItem>
+ <SelectItem value="Hinjewadi" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Hinjewadi
+      </SelectItem>
       <SelectItem value="Balewadi" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
         Balewadi
       </SelectItem>
@@ -201,9 +204,7 @@ const Properties = () => {
       <SelectItem value="Kothrud" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
         Kothrud
       </SelectItem>
-      <SelectItem value="Hinjewadi" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
-        Hinjewadi
-      </SelectItem>
+     
     </SelectContent>
   </Select>
 </div>
