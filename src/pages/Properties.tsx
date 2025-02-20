@@ -104,19 +104,21 @@ const Properties = () => {
 
           <div>
             <label className="mb-2 block text-sm font-medium">Property Type</label>
+            <div className="hover:text-white">
           <Select onValueChange={setPropertyType}>
-  <SelectTrigger className="text-black bg-white border border-gray-300 shadow-md">
+  <SelectTrigger className="text-white bg-primary border border-gray-300 shadow-md">
     <SelectValue placeholder="Select type" />
   </SelectTrigger>
-  <SelectContent className="bg-white text-black border border-gray-300 shadow-lg">
-    <SelectItem value="residential" className="text-black bg-white">
+  <SelectContent className="bg-primary text-white border border-gray-300 shadow-lg">
+    <SelectItem value="residential" className="text-black bg-primary">
       Residential
     </SelectItem>
-    <SelectItem value="commercial" className="text-black bg-white">
+    <SelectItem value="commercial" className="text-black bg-primary">
       Commercial
     </SelectItem>
   </SelectContent>
 </Select>
+</div>
           </div>
 
 
@@ -213,7 +215,7 @@ const Properties = () => {
                   <SelectContent className="bg-primary text-white">
                     <SelectItem
                       value="1BHK"
-                      className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
+                      className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-white"
                     >
                       1 BHK
                     </SelectItem>
