@@ -110,10 +110,10 @@ const Properties = () => {
     <SelectValue placeholder="Select type" />
   </SelectTrigger>
   <SelectContent className="bg-primary text-white border border-gray-300 shadow-lg">
-    <SelectItem value="residential" className="text-black bg-primary">
+    <SelectItem value="residential" className="text-white bg-primary">
       Residential
     </SelectItem>
-    <SelectItem value="commercial" className="text-black bg-primary">
+    <SelectItem value="commercial" className="text-white bg-primary">
       Commercial
     </SelectItem>
   </SelectContent>
