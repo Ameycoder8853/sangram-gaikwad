@@ -129,87 +129,84 @@ const Properties = () => {
           {propertyType === "residential" && (
             <>
               <div>
-                <label className="mb-2 block text-sm font-medium">Location</label>
-                <Select value={location} onValueChange={setLocation}>
-                  <SelectTrigger className="text-white">
-                    <SelectValue placeholder="Select location" />
-                  </SelectTrigger>
-                  <SelectContent className="bg-primary text-white">
-                    <SelectItem
-                      value="dubai"
-                      className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
-                    >
-                      Dubai
-                    </SelectItem>
-                    <SelectItem
-                      value="Baner"
-                      className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
-                    >
-                      Baner
-                    </SelectItem>
-                    <SelectItem
-                      value="Balewadi"
-                      className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
-                    >
-                      Balewadi
-                    </SelectItem>
-                    <SelectItem
-                      value="Wakad"
-                      className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
-                    >
-                      Wakad
-                    </SelectItem>
-                    <SelectItem
-                      value="Tathawade"
-                      className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
-                    >
-                      Tathawade
-                    </SelectItem>
-                    <SelectItem
-                      value="Punawale"
-                      className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
-                    >
-                      Punawale
-                    </SelectItem>
-                    <SelectItem
-                      value="Ravet"
-                      className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
-                    >
-                      Ravet
-                    </SelectItem>
-                    <SelectItem
-                      value="Bavdhan"
-                      className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
-                    >
-                      Bavdhan
-                    </SelectItem>
-                    <SelectItem
-                      value="Pashan"
-                      className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
-                    >
-                      Pashan
-                    </SelectItem>
-                    <SelectItem
-                      value="Baner annex"
-                      className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
-                    >
-                      Baner annex
-                    </SelectItem>
-                    <SelectItem
-                      value="Sus"
-                      className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
-                    >
-                      Sus
-                    </SelectItem>
-                    <SelectItem
-                      value="Koregaon park"
-                      className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
-                    >
-                      Koregaon park
-                    </SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
+  <label className="mb-2 block text-sm font-medium">Location</label>
+  <Select value={location} onValueChange={setLocation}>
+    <SelectTrigger className="text-white">
+      <SelectValue placeholder="Select location" />
+    </SelectTrigger>
+    <SelectContent className="bg-primary text-white">
+      <SelectItem value="dubai" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Dubai
+      </SelectItem>
+      <SelectItem value="Baner" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Baner
+      </SelectItem>
+      <SelectItem value="Balewadi" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Balewadi
+      </SelectItem>
+      <SelectItem value="Wakad" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Wakad
+      </SelectItem>
+      <SelectItem value="Tathawade" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Tathawade
+      </SelectItem>
+      <SelectItem value="Punawale" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Punawale
+      </SelectItem>
+      <SelectItem value="Ravet" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Ravet
+      </SelectItem>
+      <SelectItem value="Bavdhan" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Bavdhan
+      </SelectItem>
+      <SelectItem value="Pashan" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Pashan
+      </SelectItem>
+      <SelectItem value="Baner annex" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Baner annex
+      </SelectItem>
+      <SelectItem value="Sus" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Sus
+      </SelectItem>
+      <SelectItem value="Koregaon park" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Koregaon park
+      </SelectItem>
+      <SelectItem value="Kharadi" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Kharadi
+      </SelectItem>
+      <SelectItem value="Viman nagar" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Viman nagar
+      </SelectItem>
+      <SelectItem value="NIBM" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        NIBM
+      </SelectItem>
+      <SelectItem value="Dhanori" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Dhanori
+      </SelectItem>
+      <SelectItem value="Wagholi" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Wagholi
+      </SelectItem>
+      <SelectItem value="Mundwa" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Mundwa
+      </SelectItem>
+      <SelectItem value="Pimple Nilakh" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Pimple Nilakh
+      </SelectItem>
+      <SelectItem value="Bhosale Nagar" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Bhosale Nagar
+      </SelectItem>
+      <SelectItem value="Prabhat Road" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Prabhat Road
+      </SelectItem>
+      <SelectItem value="Kothrud" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Kothrud
+      </SelectItem>
+      <SelectItem value="Hinjewadi" className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black">
+        Hinjewadi
+      </SelectItem>
+    </SelectContent>
+  </Select>
+</div>
 
 
               <div>
