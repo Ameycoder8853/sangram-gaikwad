@@ -108,7 +108,7 @@ const Properties = () => {
               <SelectTrigger className="text-white">
                 <SelectValue placeholder="Select type" />
               </SelectTrigger>
-              <SelectContent className="bg-primary text-white">
+              <SelectContent className="bg-white text-white hover:text-black">
                 <SelectItem
                   value="residential"
                   className="text-white hover:bg-gray-400 hover:text-black aria-selected:bg-gray-400 aria-selected:text-black"
